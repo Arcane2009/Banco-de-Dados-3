@@ -1,13 +1,11 @@
-
-create table Tb_CLIENTE(
-cod_cliente  int auto_increment,
-nome varchar(50) not null,
-telefone_1 varchar(14),
-telefone_2 varchar(14),
-email varchar(50) not null,
-rua varchar(50) not null,
-bairro varchar(20) not null,
-cidade varchar(15) not null,
-estado varchar(10) not null,
-primary key(cod_cliente)
+create table Tb_LIVRO(
+cod_livro int auto_increment,
+valor decimal(10,2)not null,
+ano_publicacao int not null,
+categoria varchar(25),
+titulo varchar(50) not null,
+isbn varchar(25) not null,
+autor varchar(25) not null,
+cod_editora int not null,
+primary key(cod_livro)
 );
